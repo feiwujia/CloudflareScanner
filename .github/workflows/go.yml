@@ -38,7 +38,7 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.1.4
       with:
-        path: CloudflareScanner
+        path: /home/runner/work/CloudflareScanner/CloudflareScanner
 
     - name: Test
       run: go test -v .
