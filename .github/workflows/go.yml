@@ -32,10 +32,13 @@ jobs:
     - name: Build
       run: go build -v .
 
-    - name: Test
-      run: go test -v .
-  
+    - name: Run a one-line script
+      run: pwd
+
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.1.4
       with:
         path: CloudflareScanner
+
+    - name: Test
+      run: go test -v .
